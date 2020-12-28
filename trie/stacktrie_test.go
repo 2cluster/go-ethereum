@@ -7,11 +7,11 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/common/hexutil"
+	"github.com/2cluster/go-ethereum/core/types"
+	"github.com/2cluster/go-ethereum/crypto"
+	"github.com/2cluster/go-ethereum/ethdb/memorydb"
 )
 
 func TestSizeBug(t *testing.T) {

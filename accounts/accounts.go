@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
+	"github.com/2cluster/go-ethereum"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/core/types"
+	"github.com/2cluster/go-ethereum/event"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/crypto"
+	"github.com/2cluster/go-ethereum/params"
 )
 
 var (

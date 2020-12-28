@@ -19,8 +19,8 @@ package eth
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/rlp"
 )
 
 // Tests that the custom union field encoder and decoder works correctly.

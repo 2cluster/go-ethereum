@@ -24,11 +24,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/core/rawdb"
+	"github.com/2cluster/go-ethereum/ethdb"
+	"github.com/2cluster/go-ethereum/log"
+	"github.com/2cluster/go-ethereum/metrics"
 	"github.com/steakknife/bloomfilter"
 )
 

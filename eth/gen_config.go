@@ -5,13 +5,13 @@ package eth
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/consensus/ethash"
+	"github.com/2cluster/go-ethereum/core"
+	"github.com/2cluster/go-ethereum/eth/downloader"
+	"github.com/2cluster/go-ethereum/eth/gasprice"
+	"github.com/2cluster/go-ethereum/miner"
+	"github.com/2cluster/go-ethereum/params"
 )
 
 // MarshalTOML marshals as TOML.

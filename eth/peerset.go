@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/eth/protocols/snap"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/2cluster/go-ethereum/common"
+	"github.com/2cluster/go-ethereum/eth/protocols/eth"
+	"github.com/2cluster/go-ethereum/eth/protocols/snap"
+	"github.com/2cluster/go-ethereum/event"
+	"github.com/2cluster/go-ethereum/p2p"
 )
 
 var (

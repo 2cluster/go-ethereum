@@ -26,12 +26,12 @@ import (
 
 	"gopkg.in/urfave/cli.v1"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/2cluster/go-ethereum/cmd/utils"
+	"github.com/2cluster/go-ethereum/eth"
+	"github.com/2cluster/go-ethereum/internal/ethapi"
+	"github.com/2cluster/go-ethereum/log"
+	"github.com/2cluster/go-ethereum/node"
+	"github.com/2cluster/go-ethereum/params"
 	"github.com/naoina/toml"
 )
 
@@ -130,7 +130,7 @@ func makeConfigNode(ctx *cli.Context) (*node.Node, gethConfig) {
 		}
 
 		if cfg.Shh != (whisperDeprecatedConfig{}) {
-			log.Warn("Deprecated whisper config detected. Whisper has been moved to github.com/ethereum/whisper")
+			log.Warn("Deprecated whisper config detected. Whisper has been moved to github.com/2cluster/whisper")
 		}
 	}
 
@@ -153,7 +153,7 @@ func makeConfigNode(ctx *cli.Context) (*node.Node, gethConfig) {
 func checkWhisper(ctx *cli.Context) {
 	for _, flag := range whisperFlags {
 		if ctx.GlobalIsSet(flag.GetName()) {
-			log.Warn("deprecated whisper flag detected. Whisper has been moved to github.com/ethereum/whisper")
+			log.Warn("deprecated whisper flag detected. Whisper has been moved to github.com/2cluster/whisper")
 		}
 	}
 }
