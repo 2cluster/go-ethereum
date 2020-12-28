@@ -26,7 +26,6 @@ import (
 
 	"github.com/dop251/goja"
 	"github.com/2cluster/go-ethereum/accounts/scwallet"
-	"github.com/2cluster/go-ethereum/accounts/usbwallet"
 	"github.com/2cluster/go-ethereum/common/hexutil"
 	"github.com/2cluster/go-ethereum/console/prompt"
 	"github.com/2cluster/go-ethereum/internal/jsre"
@@ -124,16 +123,6 @@ func (b *bridge) OpenWallet(call jsre.Call) (goja.Value, error) {
 
 	// Wallet open failed, report error unless it's a PIN or PUK entry
 	switch {
-	case strings.HasSuffix(err.Error(), usbwallet.ErrTrezorPINNeeded.Error()):
-		val, err = b.readPinAndReopenWallet(call)
-		if err == nil {
-			return val, nil
-		}
-		val, err = b.readPassphraseAndReopenWallet(call)
-		if err != nil {
-			return nil, err
-		}
-
 	case strings.HasSuffix(err.Error(), scwallet.ErrPairingPasswordNeeded.Error()):
 		// PUK input requested, fetch from the user and call open again
 		input, err := b.prompter.PromptPassword("Please enter the pairing password: ")
